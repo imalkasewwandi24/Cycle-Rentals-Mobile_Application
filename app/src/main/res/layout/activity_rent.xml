@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/cycleback4"
+    android:padding="50dp">
+
+    <TextView
+        android:id="@+id/tvRentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cycle Name:"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvRentPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price (1hr):"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvRentType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type:"
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvRentLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location:"
+        android:layout_marginBottom="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <!-- Pickup Date -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pickup Date:"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvPickupDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:onClick="showDatePicker"/>
+
+    <!-- Pickup Time -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pickup Time:"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvPickupTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Time"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:onClick="showTimePicker"/>
+
+    <!-- Pricing Plan -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Pricing Plan:"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/spPricingPlan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Rental Duration (Visible only for 'Pay As You Go' plan) -->
+    <TextView
+        android:id="@+id/tvRentalDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Rental Duration:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <Spinner
+        android:id="@+id/spRentalDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <!-- Return Location -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Return Location:"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/spReturnLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Confirm Rent Button -->
+    <Button
+        android:id="@+id/btnConfirmRent"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/DarkBlue2"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:text="Confirm Rent"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <!-- Proceed to Payment Button -->
+    <Button
+        android:id="@+id/btnPayment"
+        android:layout_width="282dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/Orange"
+        android:padding="10dp"
+        android:text="Proceed to Payment"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/ivRenterImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bicycle2"/>
+
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/cycleback4"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="118dp"
+            android:layout_height="124dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="Profile Image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/addphoto" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="5dp"
+            android:drawableStart="@drawable/name"
+            android:background="@drawable/bg_border"
+            android:drawablePadding="10dp"
+            android:inputType="textPersonName"
+            android:padding="10dp"/>
+
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="3dp"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/email"
+            android:background="@drawable/bg_border"
+            android:drawablePadding="10dp"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/etContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact Number"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="3dp"
+            android:drawableStart="@drawable/contact"
+            android:background="@drawable/bg_border"
+            android:drawablePadding="10dp"
+            android:inputType="phone"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="3dp"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/password"
+            android:background="@drawable/bg_border"
+            android:drawablePadding="10dp"
+            android:padding="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bg_border"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="Female" />
+
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/cbTerms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:text="I agree to the Terms and Conditions" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/DarkBlue2"
+            android:padding="10dp"
+            android:text="Register"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have an Account? Login"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">City Cycles</string>
+
+    <string-array name="cycleTypes">
+        <item>All</item>
+        <item>Road Bike</item>
+        <item>Mountain Bike</item>
+        <item>Cruiser Bike</item>
+        <item>Tandem Bike</item>
+        <item>Kids Bike</item>
+        <item>Trek Bike</item>
+    </string-array>
+
+    <string-array name="price">
+        <item>Default</item>
+        <item>Low - High</item>
+        <item>High - Low</item>
+    </string-array>
+
+</resources>

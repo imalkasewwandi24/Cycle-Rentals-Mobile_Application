@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/cycleback4"
+    android:padding="24dp">
+
+
+    <TextView
+        android:id="@+id/tvLoginTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login to"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+
+    <TextView
+        android:id="@+id/tvLoginCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CityCycle Rentals"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+
+    <EditText
+        android:id="@+id/etLoginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:drawableStart="@drawable/email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:drawablePadding="10dp"
+        android:background="@drawable/bg_border"
+        android:layout_marginBottom="16dp"/>
+
+
+    <EditText
+        android:id="@+id/etLoginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_border"
+        android:hint="Password"
+        android:drawableStart="@drawable/password"
+        android:drawablePadding="10dp"
+        android:inputType="textPassword"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/DarkBlue2"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="12dp"/>
+
+
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Register"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:focusable="true"/>
+</LinearLayout>
